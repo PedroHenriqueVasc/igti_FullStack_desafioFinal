@@ -1,0 +1,10 @@
+.transactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
