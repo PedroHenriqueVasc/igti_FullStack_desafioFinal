@@ -24,7 +24,7 @@ export default function Filter({ selectedTransactions }) {
   const receitas = newTransactions.reduce((accumulator, currentItem) => {
     let temp = 0;
     //console.log('accumulator: ' + accumulator);
-    if (currentItem.description === 'Salário') {
+    if (currentItem.description === 'salário') {
       temp = temp + currentItem.value;
     }
     return accumulator + temp;
@@ -32,7 +32,7 @@ export default function Filter({ selectedTransactions }) {
 
   const despesas = newTransactions.reduce((accumulator, currentItem) => {
     let temp = 0;
-    if (currentItem.description !== 'Salário') {
+    if (currentItem.description !== 'salário') {
       temp = temp + currentItem.value;
     }
     return accumulator + temp;
